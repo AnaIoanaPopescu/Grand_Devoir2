@@ -1,0 +1,10 @@
+Flamanzila,5,3,30,Épée_rouillée
+Gerila,12,5,50,Hache
+Ochila,20,10,100,Bouclier
+Troll,6,40,40,Casque
+Goblin,5,24,55,Armure
+Luminae,8,45,70,Lumina_sword
+Pasari-Lati-Lungila,6,40,50,Seringue
+Pyro-Horn,10,47,75,Hache
+Sfanta_Duminica,9,50,49,Herbe_médicinale
+Spanul,8,50,80,Épée
