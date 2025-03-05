@@ -1,0 +1,12 @@
+Potion_de_vie,20,0,0
+Herbe_médicinale,10,0,0
+Bandage,15,0,0
+Seringue,20,0,0
+Épée_rouillée,0,10,2
+Épée,0,15,5
+Hache,0,10,3
+Arc_ancien,0,20,5
+Bouclier,0,2,5
+Armure,0,8,10
+Casque,0,3,20
+Lumina_sword,0,1,13

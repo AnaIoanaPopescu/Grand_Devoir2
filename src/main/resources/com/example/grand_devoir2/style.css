@@ -1,0 +1,137 @@
+/* Styles for grid cells */
+.cell {
+    -fx-background-color: #ccc;
+    -fx-border-color: black;
+    -fx-border-width: 1;
+}
+
+.cell-empty {
+    -fx-background-color: white;
+}
+
+.cell-object {
+    -fx-background-color: yellow;
+}
+
+.cell-enemy {
+    -fx-background-image: url('path/to/enemy/image.png');
+}
+
+/* Specific colors for individual buttons */
+.resume-button {
+    -fx-background-color: #0033cc; /* Blue */
+}
+
+.newgame-button {
+    -fx-background-color: #00994d; /* Green */
+}
+
+.options-button {
+    -fx-background-color: #FFD700; /* Yellow */
+}
+
+.help-button {
+    -fx-background-color: #FFA500; /* Orange */
+}
+
+.inventory-button{
+    -fx-background-color: purple;
+}
+
+.exit-button {
+    -fx-background-color: #cc0000; /* Red */
+}
+/* New button styles */
+.save-button {
+    -fx-background-color: #cc0099; /* Indigo */
+}
+
+.resume-game-button {
+    -fx-background-color: #32CD32; /* Lime Green */
+}
+.button {
+    -fx-font-size: 16px;
+    -fx-padding: 10;
+}
+
+.label {
+    -fx-font-size: 14px;
+    -fx-text-alignment: center;
+}
+.progress-bar {
+    -fx-accent: green;
+}
+.low-health {
+    -fx-accent: red;
+}
+.medium-health {
+    -fx-accent: yellow;
+}
+.battle-log {
+    -fx-font-size: 18px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-wrap-text: true;
+    -fx-max-width: 500px; /* Prevent resizing */
+}
+.hearts {
+    -fx-background-image: url('/images/hearts.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+.question-label {
+    -fx-font-weight: bold;
+    -fx-font-size: 14px; /* Opțional: setează dimensiunea textului */
+    -fx-text-fill: #000000; /* Opțional: culoarea textului */
+}
+
+
+.answer-label {
+    -fx-font-size: 12px;
+    -fx-text-fill: #333333;
+}
+
+.icon {
+    -fx-padding: 5;
+}
+/* Background for the top section */
+#top-section {
+  -fx-background-color: linear-gradient(to bottom, #FFF3E0, #FFE0B2);
+    -fx-padding: 10px; /* Add padding around the section */
+    -fx-border-radius: 10px; /* Rounded corners for the section */
+    -fx-background-radius: 10px;
+    -fx-border-color: #A5D6A7; /* Soft green border */
+    -fx-border-width: 2px;
+}
+
+/* Stylish resource labels */
+.resource-label {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-background-color: linear-gradient(to bottom, #4CAF50, #2E7D32); /* Green gradient */
+    -fx-padding: 5px 10px;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-border-width: 2px;
+    -fx-border-color: #2E7D32;
+    -fx-alignment: center; /* Center the text */
+}
+
+/* Adjustments for Pierre, Céréales, and Bois */
+#pierre-label {
+    -fx-background-color: linear-gradient(to bottom, #78909C, #546E7A); /* Blue-gray gradient */
+    -fx-border-color: #546E7A;
+}
+
+#cereales-label {
+    -fx-background-color: linear-gradient(to bottom, #FFD54F, #FFC107); /* Yellow gradient */
+    -fx-border-color: #FFC107;
+}
+
+#bois-label {
+    -fx-background-color: linear-gradient(to bottom, #8D6E63, #6D4C41); /* Brown gradient */
+    -fx-border-color: #6D4C41;
+}

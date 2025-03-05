@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx"
+            fx:controller="com.example.grand_devoir2.HelloController"
+            fx:id="rootPane">
+
+    <top>
+        <HBox spacing="20.0" alignment="CENTER" styleClass="top-section" >
+            <padding>
+                <Insets top="10.0" bottom="10.0" left="20.0" right="20.0" />
+            </padding>
+            <!-- Resource Labels -->
+            <Label text="Pierre: " style="-fx-font-weight: bold;" />
+            <Label fx:id="pierreLabel" text="0" styleClass="resource-label" />
+            <Label text="Céréales: " style="-fx-font-weight: bold;" />
+            <Label fx:id="cerealesLabel" text="0" styleClass="resource-label"/>
+            <Label text="Bois: " style="-fx-font-weight: bold;" />
+            <Label fx:id="boisLabel" text="0" styleClass="resource-label" />
+        </HBox>
+    </top>
+    <!-- Center: The matrix grid for the game -->
+    <center>
+        <VBox alignment="CENTER">
+            <padding>
+                <Insets top="50.0" />
+            </padding>
+            <GridPane fx:id="matrixGrid" gridLinesVisible="false" style="-fx-border-color: lightgray;"
+                      onKeyPressed="#handleKeyInput">
+                <!-- The matrix is dynamically populated in the controller -->
+            </GridPane>
+        </VBox>
+    </center>
+
+    <!-- Right: The menu buttons -->
+    <right>
+        <VBox spacing="20.0" alignment="CENTER">
+            <padding>
+                <Insets top="20.0" bottom="20.0" right="20.0" left="20.0"/>
+            </padding>
+            <Button text="Load" onAction="#onResumeClick" styleClass="resume-button" />
+            <Button text="New Game" onAction="#onNewGameClick" styleClass="newgame-button" />
+            <Button text="Options" onAction="#onOptionsClick" styleClass="options-button" />
+            <Button text="Help" onAction="#onHelpClick" styleClass="help-button" />
+            <Button text="Sort Inventory" onAction="#onSortInventoryClick" styleClass="inventory-button" />
+            <Button text="Save Status Game" onAction="#onSaveStatusClick" styleClass="save-button" />
+            <Button text="Resume" onAction="#onResumeGameClick" styleClass="resume-game-button" />
+            <Button text="Exit" onAction="#onExitClick" styleClass="exit-button" />
+
+            <!-- Label pentru mesaje -->
+            <Label fx:id="messageLabel" text="" style="-fx-text-fill: red;" wrapText="true" />
+
+        </VBox>
+    </right>
+</BorderPane>
